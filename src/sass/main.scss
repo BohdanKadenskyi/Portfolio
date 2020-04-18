@@ -307,7 +307,7 @@ img {
 }
 
 .box__img {
-  width: 135px;
+  width: auto;
   border-radius: 50%;
   border: 2px solid var(--color-secondary-skyblue);
   margin-bottom: 20px;
@@ -1224,9 +1224,9 @@ footer {
     }
   }
 
-  .box__img {
-    width: 200px;
-  }
+  //   .box__img {
+  //     width: 200px;
+  //   }
 
   .box--btn {
     display: flex;

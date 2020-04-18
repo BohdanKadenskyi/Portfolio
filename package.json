@@ -1,5 +1,5 @@
 {
-  "name": "gulp-starter-kit",
+  "name": "portfolio",
   "version": "1.2.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
+  "homepage": "https://BohdanKadenskyi/Portfolio",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
+    "url": "git+https://BohdanKadenskyi/Portfolio"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "BohdanKadenskyi <abajlongit@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/luxplanjay/gulp-starter-kit/issues"
+    "url": "https://BohdanKadenskyi/Portfolio/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
