@@ -1,0 +1,235 @@
+@media screen and (min-width: 768px) {
+  .site-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-nav__logo {
+    font-size: 15px;
+  }
+
+  .site-nav__link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+
+    &::before {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      width: 60%;
+      left: 20%;
+      right: 20%;
+      height: 4px;
+      bottom: -4%;
+      background-color: var(--color-accent);
+    }
+  }
+
+  .site-nav__link,
+  .site-nav__logo {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .site-nav__logo {
+    animation-name: sliderinleft;
+
+    &:hover::after,
+    &:focus::after {
+      width: 60%;
+      height: 4px;
+      bottom: -4%;
+      right: 10%;
+      background-color: var(--color-accent);
+    }
+  }
+
+  .banner-container {
+    align-items: center;
+  }
+
+  .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/hero/tablet.jpg);
+  }
+
+  .banner-section {
+    padding-top: 60px;
+  }
+
+  .banner__content {
+    margin-right: 30px;
+    flex-basis: calc(100% / 2 - 10px);
+    flex-grow: 0;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .banner__inner {
+    margin-bottom: 50px;
+  }
+
+  .banner__title {
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .banner__title--mod {
+    font-size: 25px;
+  }
+
+  .banner__subtitle {
+    font-size: 20px;
+  }
+
+  .banner__text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::after,
+    &::after {
+      width: 85%;
+      height: 4px;
+      background-color: var(--color-secondary-skyblue);
+    }
+  }
+
+  //   .box__img {
+  //     width: 200px;
+  //   }
+
+  .box--btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    left: 47%;
+    transform: translate(-63%, -100%);
+  }
+
+  // PORTFOLIO
+
+  .portfolio__section {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .portfolio__title {
+    font-size: 30px;
+  }
+
+  .portfolio__text {
+    font-size: 20px;
+  }
+
+  .portfolio__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .portfolio__item {
+    flex-basis: calc(100% / 2 - 30px);
+    flex-grow: 0;
+    margin-right: 60px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .portfolio-preview {
+    width: 80%;
+  }
+
+  .portfolio-preview__title {
+    font-size: 20px;
+  }
+
+  // FOOTER
+
+  .footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/hero/tablet.jpg);
+  }
+
+  .message-section {
+    min-height: 600px;
+  }
+
+  .message {
+    text-align: center;
+    padding: 40px 50px;
+    height: 100%;
+  }
+
+  .message__title {
+    font-size: 28px;
+  }
+
+  .contacts-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+
+  .contacts__title,
+  .social__title {
+    padding-top: 30px;
+  }
+
+  .container-copirhit {
+    font-size: 12px;
+  }
+}
+
+// MOBIL AND TABLET
+@media screen and (max-width: 1169px) {
+  .banner__title {
+    width: 70%;
+  }
+
+  .container-copirhit {
+    text-align: center;
+  }
+
+  .terms-polic__copirhit,
+  .text__copyright {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .terms-polic__copirhit {
+    margin-right: 10px;
+  }
+
+  .arrow-up {
+    bottom: 50px;
+    right: 10px;
+  }
+}

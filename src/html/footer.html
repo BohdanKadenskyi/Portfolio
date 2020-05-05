@@ -1,0 +1,205 @@
+<section class="message-section" id="contacts">
+  <div class="container message" id="down1">
+    <h2 class="message__title">Связаться со мной&#58;</h2>
+    <form class="message__form" action="mail.php" method="POST">
+      <div class="message__box">
+        <label class="message__label">
+          <input
+            class="message__input message__input--text"
+            type="text"
+            placeholder="Ваше имя"
+            name="name"
+            required
+          />
+        </label>
+      </div>
+      <div class="message__box">
+        <label class="message__label">
+          <input
+            class="message__input message__input--email"
+            type="email"
+            placeholder="Email"
+            name="email"
+            required
+          />
+        </label>
+      </div>
+      <div class="message__box message__box--textarea">
+        <label class="message__label message__label--textarea">
+          <textarea
+            class="message__textarea"
+            placeholder="Ваше сообщение..."
+            name="message"
+          ></textarea>
+        </label>
+      </div>
+
+      <button
+        class="message__btn"
+        type="submit"
+        aria-label="toggler send a message"
+      >
+        Отправить
+      </button>
+    </form>
+  </div>
+</section>
+
+<section class="contacts-section">
+  <div class="container contacts-container">
+    <div class="content content-contacts">
+      <div class="box-contacts">
+        <h3 class="contacts__title">Контакты&#58;</h3>
+        <ul class="contacts__list list">
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--location"
+              href="https://www.google.com/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.401699,30.252512,10z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf4ee15a4505:0x764931d2170146fe!8m2!3d50.4501!4d30.5234"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="link to my place of residence"
+              ><svg class="icon icon-contacts place">
+                <use href="./images/icon-sprite.svg#place"></use>
+              </svg>
+              Kiev
+            </a>
+          </li>
+
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--gmail"
+              href="mailto:bogdan.kadenskiy@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="link to email"
+              ><svg class="icon icon-contacts gmail">
+                <use href="./images/icon-sprite.svg#gmail"></use>
+              </svg>
+              bogdan.kadenskiy@gmail.com
+            </a>
+          </li>
+
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--tel-ua"
+              href="tel:+380638106067"
+              aria-label="toggler on ukrainian phone number"
+            >
+              <svg class="icon icon-contacts phone--ua">
+                <use href="./images/icon-sprite.svg#phone"></use>
+              </svg>
+              +38(063)810-60-67
+            </a>
+          </li>
+
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--tel-cz"
+              href="tel:+420608161560"
+              aria-label="toggler on сzech phone number"
+            >
+              <svg class="icon icon-contacts phone--cz">
+                <use href="./images/icon-sprite.svg#phone"></use>
+              </svg>
+              +420-608-161-560
+            </a>
+          </li>
+
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--viber"
+              href="viber:+420608161560"
+              aria-label="toggler on сzech phone viber"
+            >
+              <svg class="icon icon-contacts viber">
+                <use href="./images/icon-sprite.svg#viber"></use>
+              </svg>
+              +420-608-161-560
+            </a>
+          </li>
+
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--whatsapp"
+              href="WhatsApp:+420608161560"
+              aria-label="toggler on сzech phone whatsapp"
+            >
+              <svg class="icon icon-contacts whatsapp">
+                <use href="./images/icon-sprite.svg#whatsapp"></use>
+              </svg>
+              +420-608-161-560
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content content-social">
+      <h3 class="social__title">Найти меня в социальных сетях&#58;</h3>
+
+      <ul class="social__list list">
+        <li class="social__item">
+          <a
+            class="social__link social__link--facebook"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/profile.php?id=100010970533659"
+            target="_blank"
+            title="Facebook"
+            aria-label="link to facebook page"
+            ><svg class="icon icon-social facebook">
+              <use href="./images/icon-sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            class="social__link social__link--likendIn"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/bogdan-kadenskiy-993980aa/?midToken=AQEttZTsBTd8HA&trk=eml-email_pymk_01-header-86-profile&trkEmail=eml-email_pymk_01-header-86-profile-null-6gjl33%7Ek91yptle%7Eic-null-neptune%2Fprofile%7Evanity%2Eview"
+            target="_blank"
+            title="LikendIn"
+            aria-label="link to LikendIn page"
+            ><svg class="icon icon-social linkedin">
+              <use href="./images/icon-sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            class="social__link social__link--git"
+            rel="noopener noreferrer"
+            href="https://github.com/BohdanKadenskyi"
+            target="_blank"
+            title="Github"
+            aria-label="link to github page"
+            ><svg class="icon icon-social github">
+              <use href="./images/icon-sprite.svg#github"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="section-copirhit">
+    <div class="container container-copirhit">
+      <p class="terms-polic__copirhit">
+        Условия использования сайта
+        <span class="terms-polic__symbol">&#8739;</span> Политика
+        конфиденциальности
+      </p>
+      <p class="text__copyright">
+        &copy; 2020
+        <span class="copyright__symbol">&#8739;</span> Портфолио cоздано
+        <a
+          class="copyright__link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Logo Kadenskyi"
+          aria-label="toggler to logo Kadenskyi Bohdan"
+          >Каденским Богданом</a
+        >. Все права защищены.
+      </p>
+    </div>
+  </section>
+</section>

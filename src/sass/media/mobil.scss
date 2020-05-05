@@ -1,0 +1,56 @@
+@media screen and (max-width: 767px) {
+  .banner-container {
+    align-items: center;
+  }
+
+  .banner__content--text {
+    width: 320px;
+  }
+
+  .banner__inner {
+    margin-bottom: 25px;
+  }
+
+  .banner__btn:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .banner-arrow {
+    margin: 0 auto;
+  }
+
+  .portfolio__text {
+    &::after {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .portfolio__list + .portfolio__list {
+    margin-top: 20px;
+  }
+
+  .message__btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .content-contacts {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .contacts__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .container-copirhit {
+    font-size: 10px;
+  }
+
+  .arrow-up {
+    right: 15px;
+  }
+}

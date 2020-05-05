@@ -1,0 +1,155 @@
+.banner {
+  position: relative;
+  min-height: calc(100vh - 60px);
+  color: var(--color-secondary-skyblue);
+  background-color: #808080;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/hero/mobil.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner-section {
+  text-align: center;
+  padding-top: 40px;
+  width: 100%;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__content {
+  flex-basis: calc(100% / 2);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.box__img {
+  width: auto;
+  border-radius: 50%;
+  border: 2px solid var(--color-secondary-skyblue);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.banner__title {
+  margin: 0;
+  padding: 0;
+  color: var(--color-primary-white);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner__title--mod {
+  color: var(--color-secondary-skyblue);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.banner__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-style: italic;
+  color: var(--color-primary-white);
+}
+
+.banner__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 30px;
+
+  &::after,
+  &::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 4px;
+    background-color: var(--color-secondary-skyblue);
+  }
+}
+
+.banner__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 60px;
+  min-width: 230px;
+  margin: 0 auto;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 1.9;
+  color: var(--color-primary-white);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--color-secondary-skyblue);
+  border-radius: 10px;
+  text-transform: uppercase;
+  transform: scale(1);
+  transition-property: transform, background-color;
+  transition-duration: var(--animation-time), var(--animation-time);
+  transition-timing-function: var(--timing-fn), var(--timing-fn);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-primary-white);
+    color: var(--color-secondary-skyblue);
+    border: 1px solid var(--color-secondary-skyblue);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    background-color: var(--color-primary-white);
+  }
+}
+
+.img-rensposive {
+  border-radius: 50%;
+  border: 10px solid rgba(0, 0, 0, 0.2);
+}
+
+.banner-arrow {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: block;
+  text-decoration: none;
+  transform: scale(1);
+  animation-name: move;
+  animation-duration: 700ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+
+  &:hover,
+  &:focus {
+    transform: scale(0.9);
+    animation-play-state: paused;
+  }
+}
+
+.banner-icon {
+  width: 40px;
+  height: 40px;
+}

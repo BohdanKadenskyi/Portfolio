@@ -1,0 +1,320 @@
+footer {
+  background-color: var(--color-text);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/hero/mobil.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.message-section {
+  min-height: 500px;
+}
+
+.message {
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  height: 100%;
+}
+
+.message__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--color-primary-white);
+}
+
+.message__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.message__box {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.message__box--textarea {
+  height: 100px;
+  margin-bottom: 100px;
+}
+
+.message__label {
+  display: flex;
+  text-align: start;
+  width: 100%;
+}
+
+.message__input {
+  all: unset;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(96, 101, 104, 0.8);
+  color: var(--color-accent);
+
+  &::placeholder {
+    color: var(--color-rgda-text);
+  }
+}
+
+.message__textarea {
+  all: unset;
+  height: 100px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  width: 100%;
+  border-bottom: 1px solid rgba(96, 101, 104, 0.8);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  resize: none;
+  color: var(--color-accent);
+
+  &::placeholder {
+    color: var(--color-rgda-text);
+  }
+}
+
+.message__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 50px;
+  min-width: 200px;
+  margin-right: auto;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 1.9;
+  color: var(--color-primary-white);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--color-secondary-skyblue);
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: scale(1);
+  transition-property: transform, background-color;
+  transition-duration: 400ms, 400ms;
+  transition-timing-function: var(--timing-fn), var(--timing-fn);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-primary-white);
+    color: var(--color-secondary-skyblue);
+    border: 1px solid var(--color-secondary-skyblue);
+    transform: scale(0.9);
+  }
+
+  &:active {
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+  }
+}
+
+// CONTACTS
+// добавить градиент попробовать на сектион контакт
+
+.content {
+  flex-basis: calc(100% / 2 - 10px);
+  flex-grow: 0;
+  margin-right: 50px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.contacts-container {
+  margin-bottom: 20px;
+}
+
+.content-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__title,
+.social__title {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.9;
+  color: var(--color-primary-white);
+  margin-bottom: 20px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__link {
+  display: inline-flex;
+  text-decoration: none;
+  color: var(--color-secondary-skyblue);
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: var(--color-primary-white);
+  }
+
+  &:active {
+    color: var(--color-accent);
+  }
+
+  &:hover .icon-contacts,
+  &:focus .icon-contacts {
+    fill: var(--color-primary-white);
+    transform: scale(1.2);
+  }
+
+  &:active .icon-contacts {
+    fill: var(--color-accent);
+  }
+}
+
+.icon-contacts {
+  margin-right: 6px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--timing-fn);
+}
+
+.content-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: transparent;
+  color: var(--color-secondary-skyblue);
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--timing-fn);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:hover .linkedin,
+  &:focus .linkedin {
+    fill: var(--color-primary-white);
+    border: 1px solid var(--color-secondary-skyblue);
+  }
+
+  &:active .icon-social {
+    fill: var(--color-accent);
+    transform: scale(1.2);
+  }
+
+  &:hover .github,
+  &:focus .github {
+    fill: var(--color-primary-white);
+    border: 1px solid var(--color-black);
+  }
+}
+
+.linkedin {
+  fill: var(--color-secondary-skyblue);
+}
+
+.icon-social {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.github {
+  fill: var(--color-black);
+}
+
+.section-copirhit {
+  background-color: rgb(38, 41, 52);
+}
+
+.container-copirhit {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-primary-white);
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.copyright__link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-secondary-skyblue);
+}
+
+.arrow-up {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--color-rgda-text);
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--timing-fn);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+    border: 2px solid var(--color-primary-white);
+  }
+
+  &:active {
+    border: 2px solid var(--color-primary-white);
+  }
+}

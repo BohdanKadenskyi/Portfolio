@@ -1,0 +1,133 @@
+@media screen and (min-width: 1170px) {
+  .site-nav__link {
+    font-size: 15px;
+  }
+
+  .site-nav__logo {
+    font-size: 18px;
+  }
+
+  .site-nav__link {
+    &:hover::after,
+    &:focus::after {
+      background-color: var(--color-secondary-skyblue);
+    }
+  }
+
+  .site-nav__logo {
+    &:hover::after,
+    &:focus::after {
+      background-color: var(--color-secondary-skyblue);
+    }
+  }
+
+  .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/hero/desktop-1300.jpg);
+  }
+
+  .banner-section {
+    padding-top: 100px;
+  }
+
+  .banner__content {
+    margin-right: 70px;
+  }
+
+  .banner__title {
+    font-size: 30px;
+  }
+
+  .banner__text {
+    width: 100%;
+
+    &::after,
+    &::after {
+      width: 100%;
+    }
+  }
+
+  .banner-container {
+    flex-direction: row;
+  }
+
+  .banner__title--mod {
+    font-size: 30px;
+  }
+
+  .banner__subtitle {
+    font-size: 35px;
+  }
+
+  .banner__text {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .box__img {
+    width: 269px;
+    margin-left: 150px;
+  }
+
+  .box--btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .portfolio__title {
+    font-size: 50px;
+  }
+
+  .portfolio__text {
+    font-size: 25px;
+  }
+
+  .portfolio-preview__title {
+    font-size: 30px;
+  }
+
+  footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/hero/desktop-1300.jpg);
+  }
+
+  .message__title {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/hero/mobil@2x.jpg);
+  }
+
+  footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/hero/mobil@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1169px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/hero/tablet@2x.jpg);
+  }
+
+  footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/hero/tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1170px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/hero/desktop@2x.jpg);
+  }
+
+  footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/hero/desktop@2x.jpg);
+  }
+}
