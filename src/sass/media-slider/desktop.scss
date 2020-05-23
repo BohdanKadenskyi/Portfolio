@@ -1,0 +1,49 @@
+@media screen and (max-width: 1169px) {
+  .holder {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .text__content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .polic-terms__copirhit {
+    text-align: center;
+  }
+
+  .text__copyright {
+    text-align: center;
+  }
+
+  .item__social {
+    padding-top: 10px;
+  }
+
+  .link__social {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .list__social {
+    flex-direction: column;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .pagination-slider {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .holder__img {
+    margin-right: 20px;
+  }
+
+  .content-slider {
+    min-height: 500px;
+  }
+}

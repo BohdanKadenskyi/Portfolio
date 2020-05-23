@@ -11,11 +11,18 @@
 @import './Components/banner.scss';
 @import './Components/portfolio.scss';
 @import './Components/footer.scss';
+@import './Components/style.scss';
 
 // UTILS
 @import './utils/animations.scss';
+@import './utils/animation_slider.scss';
 
 // MEDIA
 @import './media/mobil.scss';
 @import './media/tablet.scss';
 @import './media/desktop.scss';
+
+// MEDIA SLIDER
+@import './media-slider/mobil.scss';
+@import './media-slider/tablet.scss';
+@import './media-slider/desktop.scss';
