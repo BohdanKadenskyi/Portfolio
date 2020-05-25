@@ -1,26 +1,3 @@
-html  {
-  box-sizing: border-box;
-}
-
-* {
-  box-sizing: inherit;
-}
-
-:root {
-  --color-primary-white: #ffffff;
-  --color-secondary-skyblue: #8298f0;
-  --color-black: #000000;
-  --color-primary-font: #0f0101;
-  --color-text: #323232;
-  --color-accent: #adff2f;
-  --color-rgda-text: rgba(9, 175, 223, 0.5);
-  --font-primary-stack: 'Montserrat', sans-serif;
-  --font-secondary-stack: 'Roboto', sans-serif;
-  --animation-time: 250ms;
-  --timing-fn: cubic-bezier(0.4, 0, 0.2, 1);
-  --outline: 1px solid orange;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -40,12 +17,6 @@ p {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .mastheader {
@@ -237,7 +208,7 @@ img {
   display: flex;
   align-items: center;
   background-color: rgb(38, 41, 52);
-  min-height: 90px;
+  min-height: 70px;
 }
 
 .copirhit-container {
